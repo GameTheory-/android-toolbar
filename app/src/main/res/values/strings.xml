@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Toolbar</string>
+    <string name="toast_message">Toast Message</string>
+    <string name="another_toast_message">Another Toast Message</string>
+</resources>
