@@ -1,6 +1,6 @@
 ## Android Toolbar Tutorial
 
-This is a sample app for educational purpose. This app will demonstrate how to setup an android custom Toolbar.
+This is a sample app to demonstrate how to setup an android custom Toolbar.
 
 ### Project Page with Tutorial
 

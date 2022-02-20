@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Adds the Toolbar to our MainActivity.
         toolBar();
-
     }
 
     // Our Toolbar
@@ -46,20 +45,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            // Here we add items to our Overflow menu in our Toolbar.
-            // You can add as many items as you need.
-            // You can also run other methods or classes from these menu items.
-            case R.id.myMessage: // This is the id of the item in our menu.xml
-                Toast.makeText(getApplicationContext(), "Our Overflow menu works! Fantastic!", Toast.LENGTH_LONG).show();
-                return true;
-
+        // Here we add items to our Overflow menu in our Toolbar.
+        // You can add as many items as you need.
+        // You can also run other methods or classes from these menu items.
+        int itemId = item.getItemId();
+        if (itemId == R.id.myMessage) { // This is the id of the item in our menu.xml
+            Toast.makeText(getApplicationContext(), "Our Overflow menu works! Fantastic!", Toast.LENGTH_LONG).show();
+            return true;
+        } else if (itemId == R.id.anotherMessage) { // This is another id of an item in our menu.xml
             // This is just another toast message to give you the idea of
             // how to add multiple items to the Overflow menu.
-            case R.id.anotherMessage: // This is the id of the item in our menu.xml
-                Toast.makeText(getApplicationContext(), "Another item in our Overflow menu! Fantastic!", Toast.LENGTH_LONG).show();
-                return true;
-
+            Toast.makeText(getApplicationContext(), "Another item in our Overflow menu! Fantastic!", Toast.LENGTH_LONG).show();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
